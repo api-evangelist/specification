@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "spec": "https://api-evangelist.com/vocab/specification/",
+    "oas": "https://spec.openapis.org/oas/vocab/",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "version": "version",
+    "TechArticle": "TechArticle",
+    "SoftwareApplication": "SoftwareApplication",
+    "APISpecification": {
+      "@id": "spec:APISpecification",
+      "@type": "@id"
+    },
+    "OpenAPISpec": {
+      "@id": "spec:OpenAPISpec",
+      "@type": "@id"
+    },
+    "AsyncAPISpec": {
+      "@id": "spec:AsyncAPISpec",
+      "@type": "@id"
+    },
+    "JSONSchemaSpec": {
+      "@id": "spec:JSONSchemaSpec",
+      "@type": "@id"
+    },
+    "ArazzoSpec": {
+      "@id": "spec:ArazzoSpec",
+      "@type": "@id"
+    },
+    "specFormat": {
+      "@id": "spec:format",
+      "@type": "xsd:string"
+    },
+    "specVersion": {
+      "@id": "spec:version",
+      "@type": "xsd:string"
+    },
+    "baseUrl": {
+      "@id": "spec:baseUrl",
+      "@type": "xsd:anyURI"
+    },
+    "paths": {
+      "@id": "spec:paths",
+      "@type": "xsd:integer"
+    },
+    "schemas": {
+      "@id": "spec:schemas",
+      "@type": "xsd:integer"
+    },
+    "maintainer": {
+      "@id": "spec:maintainer",
+      "@type": "@id"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

@@ -1,0 +1,179 @@
+name: Specification Vocabulary
+description: >-
+  Domain vocabulary for API specifications, specification-driven development,
+  and the API specification landscape. Covers the terminology, formats, concepts,
+  and practices surrounding machine-readable API contracts.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+
+terms:
+  - term: API Specification
+    definition: >-
+      A machine-readable document that formally describes an API's structure,
+      operations, data formats, authentication mechanisms, and expected behavior.
+      API specifications serve as contracts between API producers and consumers
+      and drive code generation, documentation, testing, and governance tooling.
+    tags:
+      - Core Concepts
+      - Standards
+
+  - term: OpenAPI
+    fullForm: OpenAPI Specification
+    definition: >-
+      The industry-standard format for describing REST/HTTP APIs, maintained by
+      the OpenAPI Initiative under the Linux Foundation. Version 3.1 achieves
+      full JSON Schema alignment. Used to generate SDKs, documentation, mock
+      servers, and Terraform providers. Formerly known as Swagger.
+    tags:
+      - HTTP APIs
+      - Standards
+
+  - term: AsyncAPI
+    fullForm: AsyncAPI Specification
+    definition: >-
+      An open standard for defining event-driven and asynchronous APIs including
+      Kafka, AMQP, MQTT, WebSocket, SNS, and SQS. Modeled on OpenAPI but extended
+      for message-based protocols with publish/subscribe semantics.
+    tags:
+      - Async APIs
+      - Standards
+
+  - term: JSON Schema
+    definition: >-
+      A vocabulary for annotating and validating JSON documents, used as the
+      foundation for data type definitions in OpenAPI 3.1 and AsyncAPI.
+      Available in multiple drafts including Draft 7, 2019-09, and 2020-12.
+    tags:
+      - Data Schemas
+      - Standards
+
+  - term: Arazzo
+    definition: >-
+      An OpenAPI Initiative specification for describing multi-step API workflows
+      and sequences, enabling documentation and automated contract testing of
+      complex API interactions that chain multiple operations.
+    tags:
+      - Workflows
+      - Standards
+
+  - term: Specification-First Development
+    definition: >-
+      A software development approach where the API contract (specification) is
+      authored before implementation, serving as the single source of truth for
+      all generated artifacts including code, documentation, tests, and clients.
+    tags:
+      - Methodology
+      - Best Practices
+
+  - term: Contract Testing
+    definition: >-
+      A testing approach that validates the API implementation against its
+      specification to ensure the actual behavior matches the documented contract.
+      Catches breaking changes before they reach consumers.
+    tags:
+      - Testing
+      - Quality
+
+  - term: Code Generation
+    definition: >-
+      Automatic generation of client SDKs, server stubs, data models, Terraform
+      providers, MCP servers, and other artifacts directly from an API specification.
+      Eliminates manual boilerplate and keeps generated code synchronized with
+      spec changes.
+    tags:
+      - Tooling
+      - Automation
+
+  - term: OpenAPI Overlay
+    definition: >-
+      A document format for making structured modifications to an existing OpenAPI
+      spec without editing the source file. Overlays apply a set of targeted
+      changes (add, remove, replace) enabling customization for different consumers.
+    tags:
+      - OpenAPI
+      - Tooling
+
+  - term: Linting
+    definition: >-
+      Automated analysis of an API specification against a ruleset to enforce
+      style conventions, naming standards, completeness requirements, and
+      security best practices. Tools include Spectral, Vacuum, and built-in
+      validators in editors like SpecLynx.
+    tags:
+      - Quality
+      - Governance
+
+  - term: Mock Server
+    definition: >-
+      A server generated from an API specification that returns example responses
+      without a real backend implementation. Used for parallel development,
+      consumer-driven testing, and sandbox environments.
+    tags:
+      - Testing
+      - Tooling
+
+  - term: Breaking Change
+    definition: >-
+      A modification to an API specification that is incompatible with existing
+      consumers, such as removing an endpoint, changing a required field type,
+      or adding a required request parameter. Breaking changes require major
+      version bumps.
+    tags:
+      - Versioning
+      - Governance
+
+  - term: Schema Registry
+    definition: >-
+      A versioned repository for API specifications and schema artifacts,
+      enabling organizations to discover, share, and govern API contracts
+      across teams and systems.
+    tags:
+      - Governance
+      - Discovery
+
+  - term: Spectral
+    definition: >-
+      An open-source JSON/YAML linting tool by Stoplight that applies customizable
+      rulesets to OpenAPI, AsyncAPI, and other specification formats to enforce
+      API design standards and governance rules.
+    tags:
+      - Linting
+      - Tooling
+
+  - term: Swagger
+    definition: >-
+      The original name for the OpenAPI Specification, developed by SmartBear.
+      Now refers to the SmartBear tooling ecosystem (SwaggerHub, SwaggerUI,
+      SwaggerEditor) while the specification itself is called OpenAPI.
+    tags:
+      - HTTP APIs
+      - History
+
+categories:
+  - name: Core Concepts
+    description: Fundamental specification and API design concepts
+    terms:
+      - API Specification
+      - Specification-First Development
+      - Contract Testing
+      - Breaking Change
+
+  - name: Formats and Standards
+    description: Specific specification formats and their standards bodies
+    terms:
+      - OpenAPI
+      - AsyncAPI
+      - JSON Schema
+      - Arazzo
+      - Swagger
+
+  - name: Tooling and Automation
+    description: Tools and practices for working with specifications
+    terms:
+      - Code Generation
+      - Mock Server
+      - Linting
+      - Spectral
+      - OpenAPI Overlay
+      - Schema Registry

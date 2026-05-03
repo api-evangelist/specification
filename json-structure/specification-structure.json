@@ -1,0 +1,89 @@
+{
+  "name": "API Specification Landscape",
+  "description": "Structure of the API specification ecosystem, showing format categories and their relationships",
+  "type": "taxonomy",
+  "categories": [
+    {
+      "name": "HTTP API Specifications",
+      "description": "Formats for describing synchronous HTTP/REST APIs",
+      "formats": [
+        {
+          "name": "OpenAPI",
+          "versions": ["2.0", "3.0", "3.1"],
+          "maintainer": "OpenAPI Initiative (Linux Foundation)",
+          "url": "https://www.openapis.org/",
+          "primary_use": "REST API description, documentation, code generation"
+        },
+        {
+          "name": "RAML",
+          "versions": ["0.8", "1.0"],
+          "maintainer": "MuleSoft",
+          "primary_use": "REST API design (largely superseded by OpenAPI)"
+        },
+        {
+          "name": "API Blueprint",
+          "versions": ["1A"],
+          "maintainer": "Apiary / Oracle",
+          "primary_use": "REST API documentation (largely superseded)"
+        }
+      ]
+    },
+    {
+      "name": "Async and Event-Driven Specifications",
+      "description": "Formats for describing asynchronous, event-driven, and message-based APIs",
+      "formats": [
+        {
+          "name": "AsyncAPI",
+          "versions": ["2.0", "2.6", "3.0"],
+          "maintainer": "AsyncAPI Initiative",
+          "url": "https://www.asyncapi.com/",
+          "primary_use": "Kafka, AMQP, MQTT, WebSocket, SNS/SQS event streams"
+        }
+      ]
+    },
+    {
+      "name": "Schema Specifications",
+      "description": "Data schema and validation formats",
+      "formats": [
+        {
+          "name": "JSON Schema",
+          "versions": ["Draft 4", "Draft 6", "Draft 7", "2019-09", "2020-12"],
+          "maintainer": "JSON Schema Organization",
+          "url": "https://json-schema.org/",
+          "primary_use": "Data validation, API request/response schemas"
+        }
+      ]
+    },
+    {
+      "name": "Workflow and Multi-Step Specifications",
+      "description": "Formats for describing multi-operation API sequences",
+      "formats": [
+        {
+          "name": "Arazzo",
+          "versions": ["1.0"],
+          "maintainer": "OpenAPI Initiative",
+          "url": "https://spec.openapis.org/arazzo/latest.html",
+          "primary_use": "API workflow sequences, contract testing"
+        }
+      ]
+    },
+    {
+      "name": "RPC and Binary Specifications",
+      "description": "Formats for describing RPC and binary protocol APIs",
+      "formats": [
+        {
+          "name": "Protocol Buffers (proto3)",
+          "versions": ["proto3"],
+          "maintainer": "Google",
+          "primary_use": "gRPC API definitions"
+        },
+        {
+          "name": "GraphQL SDL",
+          "versions": ["June 2018"],
+          "maintainer": "GraphQL Foundation",
+          "primary_use": "GraphQL type system and query definitions"
+        }
+      ]
+    }
+  ]
+}

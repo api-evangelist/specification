@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/specification/main/json-schema/specification-openapi-schema.json",
+  "title": "API Specification",
+  "description": "A generic schema representing an API specification artifact and its key metadata, applicable to OpenAPI, AsyncAPI, Arazzo, JSON Schema, and other API description formats.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this specification"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the specification"
+    },
+    "format": {
+      "type": "string",
+      "enum": ["openapi", "asyncapi", "json-schema", "arazzo", "graphql-sdl", "grpc-proto", "raml", "api-blueprint", "wsdl"],
+      "description": "The specification format type"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of this specification instance (e.g., 3.1.0, 2.6.0)"
+    },
+    "specificationVersion": {
+      "type": "string",
+      "description": "Version of the specification format itself (e.g., OpenAPI 3.1)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the API described by this specification"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the API or schema"
+    },
+    "baseUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary server URL for the API"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL where this specification can be retrieved"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "email": {"type": "string", "format": "email"},
+        "url": {"type": "string", "format": "uri"}
+      }
+    },
+    "license": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "url": {"type": "string", "format": "uri"}
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Tags describing the domain and purpose of this specification"
+    },
+    "paths": {
+      "type": "integer",
+      "description": "Number of API paths or operations defined"
+    },
+    "schemas": {
+      "type": "integer",
+      "description": "Number of schema components defined"
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this specification was first published"
+    },
+    "modified": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this specification was last updated"
+    }
+  },
+  "required": ["name", "format", "version"]
+}
