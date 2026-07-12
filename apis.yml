@@ -120,6 +120,8 @@ apis:
     interactions that span multiple operations. Used for contract testing and
     API workflow documentation by tools like Speakeasy.
 common:
+- type: DomainSecurity
+  url: security/specification-domain-security.yml
 - url: https://www.openapis.org/
   name: OpenAPI Initiative
   type: Organization
