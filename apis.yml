@@ -2,6 +2,7 @@ aid: specification
 url: >-
   https://raw.githubusercontent.com/api-evangelist/specification/refs/heads/main/apis.yml
 name: Specification
+kind: topic
 description: >-
   A subject-matter collection covering API specifications, specification formats,
   specification-driven development, and the broader specification landscape. This
