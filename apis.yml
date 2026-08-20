@@ -30,6 +30,15 @@ tags:
 - API Governance
 - AsyncAPI
 - Contract Testing
+- JSON-Schema
+- OpenAPI
+- Specifications
+- Standards
+tags_raw:
+- API Design
+- API Governance
+- AsyncAPI
+- Contract Testing
 - JSON Schema
 - OpenAPI
 - Specifications
@@ -95,6 +104,11 @@ apis:
 - aid: specification:json-schema
   name: JSON Schema
   tags:
+  - Data Validation
+  - JSON
+  - JSON-Schema
+  - Standards
+  tags_raw:
   - Data Validation
   - JSON
   - JSON Schema
