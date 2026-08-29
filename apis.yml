@@ -11,6 +11,17 @@ description: >-
   Specification-first development treats the API contract as the source of truth
   for code generation, documentation, testing, and governance.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
