@@ -41,7 +41,7 @@ tags:
 - API Governance
 - AsyncAPI
 - Contract Testing
-- JSON-Schema
+- JSON Schema
 - OpenAPI
 - Specification
 - Standards
@@ -54,6 +54,7 @@ tags_raw:
 - OpenAPI
 - Specifications
 - Standards
+- JSON-Schema
 created: '2025-01-01'
 modified: '2026-05-02'
 position: Consuming
@@ -81,8 +82,6 @@ apis:
     type: GitHubRepo
   - url: https://openapi.tools/
     type: Tools
-  - url: graphql/specification-graphql.md
-    type: GraphQL
   description: >-
     The OpenAPI Specification (OAS) is the industry-standard format for
     describing REST/HTTP APIs. Maintained by the OpenAPI Initiative under
@@ -117,13 +116,14 @@ apis:
   tags:
   - Data Validation
   - JSON
-  - JSON-Schema
+  - JSON Schema
   - Standards
   tags_raw:
   - Data Validation
   - JSON
   - JSON Schema
   - Standards
+  - JSON-Schema
   humanURL: https://json-schema.org/
   properties:
   - url: https://json-schema.org/

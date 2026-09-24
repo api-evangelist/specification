@@ -1,1 +1,0 @@
-# Specification GraphQL API
