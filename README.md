@@ -1,4 +1,4 @@
-# Specification
+# specification
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,69 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-A subject-matter collection covering the API specification landscape — the formats, standards, tooling, and practices around machine-readable API contracts. Includes OpenAPI, AsyncAPI, JSON Schema, Arazzo, GraphQL SDL, Protocol Buffers, and the methodology of specification-first API development.
+## specification on APIs.io
 
-## Scope
+Everything profiled for specification is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/specification/](https://apis.io/providers/specification/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+## API Evangelist rating
 
-## Tags
+Not yet rated. See [apis.io/providers/specification/](https://apis.io/providers/specification/).
 
-API Design, API Governance, AsyncAPI, Contract Testing, JSON Schema, OpenAPI, Specifications, Standards
+## How this profile is made
 
-## Timestamps
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-02
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for specification: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-## Covered Specifications
+## Open an issue
 
-| Format | Maintainer | Use Case |
-|---|---|---|
-| [OpenAPI](https://www.openapis.org/) | OpenAPI Initiative | REST API description, code generation, documentation |
-| [AsyncAPI](https://www.asyncapi.com/) | AsyncAPI Initiative | Event-driven and messaging APIs |
-| [JSON Schema](https://json-schema.org/) | JSON Schema Org | Data validation and API request/response schemas |
-| [Arazzo](https://spec.openapis.org/arazzo/latest.html) | OpenAPI Initiative | Multi-step API workflow sequences |
-| GraphQL SDL | GraphQL Foundation | GraphQL type system definitions |
-| Protocol Buffers | Google | gRPC API definitions |
-
-## Artifacts
-
-### JSON Schema
-
-- [specification-openapi-schema.json](json-schema/specification-openapi-schema.json) — Schema for API specification metadata applicable across formats
-
-### JSON Structure
-
-- [specification-structure.json](json-structure/specification-structure.json) — Taxonomy of the API specification format landscape
-
-### JSON-LD
-
-- [specification-context.jsonld](json-ld/specification-context.jsonld) — JSON-LD context mapping specification vocabulary to linked data semantics
-
-### Vocabulary
-
-- [specification-vocabulary.yml](vocabulary/specification-vocabulary.yml) — Domain vocabulary covering API specification concepts, formats, and practices
-
-## Key Concepts
-
-- **Specification-First Development** — API contract authored before implementation
-- **Contract Testing** — Validating implementation against specification
-- **Code Generation** — Generating SDKs, stubs, and clients from specs
-- **Linting** — Enforcing style and governance rules on specifications
-- **Breaking Changes** — Incompatible modifications requiring version bumps
-
-## Resources
-
-- [OpenAPI Initiative](https://www.openapis.org/)
-- [AsyncAPI Initiative](https://www.asyncapi.com/)
-- [JSON Schema Organization](https://json-schema.org/)
-- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [OpenAPI Tools Directory](https://openapi.tools/)
-
-## Maintainers
-
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/specification/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
